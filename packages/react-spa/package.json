@@ -1,0 +1,36 @@
+{
+  "name": "lsk-example-react-spa",
+  "version": "1.0.0",
+  "description": "LSK.js - Example react spa based on LSK",
+  "keywords": [],
+  "repository": "https://github.com/lskjs/examples/tree/main/packages/react-spa",
+  "license": "MIT",
+  "author": "Andrey Kondalov <andrey@kondalov.com>",
+  "scripts": {
+    "bootstrap": "lsk run bootstrap",
+    "build": "lsk run build",
+    "dev": "lsk run dev:cra",
+    "i18": "lsk run i18",
+    "prepublishOnly": "lsk run prepublishOnly",
+    "release": "lsk run release",
+    "release:yes": "lsk run release:yes",
+    "server": "node index.server.js",
+    "server:dev": "../../node_modules/nodemon/bin/nodemon.js --delay 2 index.server.js | ../../node_modules/@lskjs/log/bin/cli.js -o short -l trace",
+    "start": "node index.js",
+    "storybook": "lsk run storybook",
+    "test": "lsk run test",
+    "test:watch": "lsk run test:watch",
+    "watch": "lsk run watch"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.8.7",
+    "@lskjs/link": "^2.4.0-beta.1",
+    "@lskjs/reactapp": "2.5.0",
+    "@lskjs/uapp": "2.5.0",
+    "@lskjs/utils": "2.5.0",
+    "lodash": "4.17.20",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
